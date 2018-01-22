@@ -2,11 +2,16 @@ package pl.javastart.app;
 
 import pl.javastart.model.*;
 
+import java.util.Scanner;
+
 public class Filmweb {
 
     public static void main (String[] args) {
 
         System.out.println("Baza Filmów wersja 0.1");
+
+        ConsoleDataReader consol = new ConsoleDataReader();
+        Scanner scan = new Scanner(System.in);
 
         Aktor aktor=new Aktor("Flavio", "Insinna", "Italy" );
         Film film= new Film("Św Jan Bosko", "Lodovico Gasparini", 2004, "religijny", "Film o świętym Janie Bosko.", 5.0);  //String tytul, String rezyser, int rokProdukcji, String gatunek, String opis, double ocena
@@ -17,5 +22,11 @@ public class Filmweb {
         film.showInfo();
         System.out.println("");
         serial.showInfo();
+
+        consol.createMovie(scan);
+        consol.createTvSeries(scan);
+        consol.createActor(scan);
+
+
     }
 }
