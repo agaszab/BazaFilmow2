@@ -72,7 +72,7 @@ public class Film {
         this.opis = opis;
     }
 
-    public void setOcena(int ocena) {
+    public void setOcena(double ocena) {
         this.ocena = ocena;
     }
 }

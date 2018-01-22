@@ -33,11 +33,11 @@ public class Aktor {
     }
 
     public void setImie(String imie) {
-        imie = imie;
+        this.imie = imie;
     }
 
     public void setNazwisko(String nazwisko) {
-        nazwisko = nazwisko;
+        this.nazwisko = nazwisko;
     }
 
     public void setKrajPochodzenia(String krajPochodzenia) {
