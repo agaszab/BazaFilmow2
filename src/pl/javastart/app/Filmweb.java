@@ -8,7 +8,7 @@ public class Filmweb {
 
     public static void main(String[] args) {
 
-        System.out.println("Baza Filmów wersja 0.1");
+        System.out.println("Baza Filmów wersja 0.2");
 
         ConsoleDataReader consol = new ConsoleDataReader();
 
