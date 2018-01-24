@@ -1,4 +1,5 @@
 package pl.javastart.app;
+
 import pl.javastart.model.*;
 
 import java.util.Locale;
@@ -7,12 +8,10 @@ import java.util.Scanner;
 
 public class ConsoleDataReader {
 
-    private int licznik;
+    Scanner scan = new Scanner(System.in);
 
 
-    Film createMovie(Scanner scan) {
-
-        Film film = new Film();
+    Film createMovie(Film film) {
 
         System.out.println("Podaj tytuł: ");
         film.setTytul(scan.nextLine());
@@ -36,14 +35,13 @@ public class ConsoleDataReader {
         film.setOcena(scan.nextDouble());
         scan.nextLine(); //pozbywa się "\n"
 
-        film.showInfo();
 
         return film;
     }
 
-    Serial createTvSeries(Scanner scan) {
 
-        Serial serial = new Serial();
+    Serial createTvSeries(Serial serial) {
+
 
         System.out.println("Podaj tytuł: ");
         serial.setTytul(scan.nextLine());
@@ -74,14 +72,12 @@ public class ConsoleDataReader {
         serial.setOcena(scan.nextDouble());
         scan.nextLine(); //pozbywa się "\n"
 
-        serial.showInfo();
-
         return serial;
     }
 
-    Aktor createActor(Scanner scan) {
 
-        Aktor aktor = new Aktor();
+    Aktor createActor(Aktor aktor) {
+
 
         System.out.println("Imię: ");
         aktor.setImie(scan.nextLine());
@@ -91,9 +87,6 @@ public class ConsoleDataReader {
 
         System.out.println("Kraj pochodzenia: ");
         aktor.setKrajPochodzenia(scan.nextLine());
-
-
-        aktor.showInfo();
 
         return aktor;
 
